@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <!-- 3. Write your name in h1 tag with blue color on mouse enter it should display red border around it.-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("h1").mouseenter(function(){
+                    $(this).css('border', '3px solid red');
+                });
+            });
+        </script>
+        <style>
+            h1{
+                text-align: center;
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 >Liberal Zarkar</h1>
+    </body>
+</html>
