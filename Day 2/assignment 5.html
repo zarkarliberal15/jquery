@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 5</title>
+       <!-- 5. Create a paragraph on button click it should hide once hidden it should display message done with hiding-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("button").click(function(){
+                   $("p").hide(function(){
+                    alert("done with hiding");
+                   });
+               });
+            });
+        </script>
+       
+        <body>
+           <button>hide</button>
+           <p>
+            My name is Liberal Zarkar. I am from Gadchiroli.
+            I have done my B.E. from G. H. Raisoni College of Engineering (Autonomous), Nagpur
+             with CGPA of 7.55 in Electronics and Telecommunication Stream. 
+             I have secured 65.47% in Polytechnic and 65.20% in SSC.
+             I have also done my internship with HPE in Department of Information Technology.
+             I am hardworking, self-motivated, passionate about learning new things, quick learner, team player.
+             There are members in my family including me. First of my respected Father who is Government Employee.
+             Then, my lovely mother, she is a Housewife and elder sister who is a Doctor.
+           </p>
+           
+        </body>
+    </head>
+</html>
