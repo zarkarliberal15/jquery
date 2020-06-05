@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+       <!-- 4. Create image on page on button click size of image will slowly increase-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("button").click(function(){
+                   $("img").animate({width:'+=15px',height:'+=10px'},"slow")
+               });
+            });
+        </script>
+        
+        <body>
+           <button>click here</button></br>
+           <img src="images/mountains.jpg" style="width:150px; height:100px">
+           
+        </body>
+    </head>
+</html>
