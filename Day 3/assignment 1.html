@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1</title>
+       <!-- 1. Create two text boxes and a buttons on click of button it should copy data from one text box to another-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                  $('#t2').val($('#t1').val());
+              });
+            });
+        </script>
+      
+        <body>
+          <label>Text Box 1</label><input id="t1"><br/><br/>
+          <label>Text Box 2</label><input id="t2" readonly><br/>
+          <button>copy</button>
+
+           
+        </body>
+    </head>
+</html>
