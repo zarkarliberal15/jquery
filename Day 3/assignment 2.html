@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2</title>
+       <!-- 2. Create a image with border on mouse over it should remove border of the image-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("img").mouseenter(function(){
+                $("img").removeClass("border");
+              });
+            });
+        </script>
+        <style>
+          img{
+              width: 80%;
+              height: 550px;
+              
+          }
+          .border{
+            border: 2px solid red;
+          }
+        </style>
+        <body>
+          <img class="border" src="images/mountains.jpg" alt="mountains">
+
+           
+        </body>
+    </head>
+</html>
