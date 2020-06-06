@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3</title>
+       <!--3. Create a list of fruits and a radio buttons showing fruits name which ever radio is clicked 
+        that fruit name should be add to list-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+             
+               $("input[name='fruit']").click(function(){
+                var fruitName =$("input[name='fruit']:checked").val();
+                $("ul").append("<li>"+fruitName+"</li>");
+               });
+                
+            });
+        </script>
+        <body>
+            <h4>List of Fruits:</h4>
+          <ul>
+              
+          </ul>
+          <h4>Pleae select any fruit to add into list</h4>
+           <input type="radio" name="fruit" value="Mango"><label>Mango</label><br/>
+           <input type="radio" name="fruit"  value="Orange"><label>Orange</label><br/>
+           <input type="radio"  name="fruit" value="Banana"><label>Banana</label><br/>
+           <input type="radio"  name="fruit" value="Cherry"><label>Cherry</label><br/>
+        </body>
+    </head>
+</html>
