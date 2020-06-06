@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+       <!--4.  Create P tag with some information on button click it should remove tag from page-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("p").remove();
+              });
+            });
+        </script>
+        
+        <body>
+          <p>
+            jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, 
+            as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License.
+             As of May 2019, jQuery is used by 73% of the 10 million most popular websites. 
+             Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, 
+             having 3 to 4 times more usage than any other JavaScript library.
+          </p>
+          <button>remove</button>
+
+           
+        </body>
+    </head>
+</html>
